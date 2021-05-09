@@ -1,375 +1,751 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travelbag</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="images/smaillogo.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelbag</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.6/swiper-bundle.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.6/swiper-bundle.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<link rel="stylesheet" href="fontawesome-free-5.15.3/css/all.min.css">
+<script src="js/jquery-3.6.0.min.js"></script>
 
 </head>
 <body>
-    <div class="menu">
-      
-        <div class="log_in_en">
-          <ul class="log_in_en_block">
-            <a href="#" class="log_in_text">EN</a>
-            <a href="#" class="log_in_text">登入 / 註冊</a>
-          </ul>
-        </div>
-        <div class="main_menu">
-          <div class="main_menu_item1">
-            <div class="logo">
-              <img src="images/logo.png" alt="">
-            </div>
-          </div>
-          <div class="main_menu_item2">
-            <ul class="topic">
-              <a href="#" class="topic_text">深度旅行</a>
-              <a href="#" class="topic_text">主題旅遊</a>
-              <a href="#" class="topic_text">自由行</a>
-              <a href="#" class="topic_text">住宿優惠</a>
-              <a href="#" class="topic_text">討論區</a>
-            </ul>
-          </div>
-        </div>
-    </div>
+<!-- navbar -->
+<header>
+  <div class="container">
+  
+    <h1 class="logo">
+      <img src="images/logo.svg" alt="">
+    </h1>
+    
+    <nav class="site-nav">
+        <ul>
+          <li><a href="deep.html">深度旅行</a></li> 
+          <li><a href="theme.html">主題旅遊</a></li>
+          <li><a href="accommodation.html">住宿優惠</a></li>
+          <li><a href="discussion.html">討論區</a></li>
+          <li><a href="#">登入 / 註冊</a></li>
+        </ul> 
+    </nav>
 
-
-    <div class="search">
-      <form action="#" style="position: relative;">
-        <input class="search_box" type="text" placeholder="請輸入目的地、景點......">
-            <a href="#" class="magnifier">
-              <img src="images/magnifier.png" alt="">
-            </a>
-      </form>
-    </div>
-
-    <div class="popular_search">
-      <ul class="popular_item">
-        <a href="#" class="popular_text">熱門搜索 &ensp;❘</a>
-        <a href="#" class="popular_text">紐約</a>
-        <a href="#" class="popular_text">羅馬</a>
-        <a href="#" class="popular_text">佛羅倫斯</a>
-        <a href="#" class="popular_text">京都</a>
-      </ul>
+    <nav class="site-nav-lg">
+      <ul>
+        <li><a href="deep.html">深度旅行</a></li> 
+        <li><a href="theme.html">主題旅遊</a></li>
+        <li><a href="accommodation.html">住宿優惠</a></li>
+        <li><a href="discussion.html">討論區</a></li>
+        <li><a href="#">登入 / 註冊</a></li>
+      </ul> 
+  </nav>
+    
+    <div class="menu-toggle">
+      <div class="hamburger"></div>
     </div>
     
-    <!-- <div class="loadingScreen"></div>
-      <div id="waterfallArea">
-        <div class="content_box"><img src="https://fakeimg.pl/280x100/"></div>
-        <div class="content_box"><img src="https://fakeimg.pl/280x250/"></div>
-        <div class="content_box"><img src="https://fakeimg.pl/280x100/"></div>
-        <div class="content_box"><img src="https://fakeimg.pl/280x150/"></div>
-        <div class="content_box"><img src="https://fakeimg.pl/280x50/"></div>
-        <div class="content_box"><img src="https://fakeimg.pl/280x200/"></div>
-        <div class="content_box"><img src="https://fakeimg.pl/280x400/"></div>
-        <div class="content_box"><img src="https://fakeimg.pl/280x300/"></div>
-        <div class="content_box"><img src="https://fakeimg.pl/280x200/"></div>
-    </div> -->
+  </div>
+  </header>
+  
+
+<script>
+  $('.menu-toggle').click(function() {
+  
+  $('.site-nav').toggleClass('site-nav--open', 500);
+  $(this).toggleClass('open');
+  
+})
+</script>
 
 
+<!-- banner -->
+<div class="slider">
+  <div class="swiper-slide">
+    <div class="bann-header">
+      <div class="inner-header">
+        <span class="banner-text">
+          <p>JOIN</p>
+          <p>TRAVEL</p>
+    
+          <form action="#">
+            <input type="text" name="" id="" placeholder=" 請輸入目的地、景點......">
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </form>
+        </span>
+      </div>
 
-    <div class="latest_news">
-      <h1 class="news_text1">Latest</h1>
-      <h1 class="news_text2">News</h1>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto" >
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave"  x="48" y="7" fill="#fff">
+      </g>
+      </svg>
     </div>
+  </div>
+</div>
 
-    <div class="loadingScreen">
-      <div class="content_box">
-        <a  href="#"  class="picture">
-          <img src="images/news01.png" alt="攝影師：David Bartus，連結：Pexels">
-        </a>
-        <div class="content_text">
-          <h2 class="loading_title">威尼斯度假14日遊~ 第二人9折優惠</h2>
-          <p class="loading_text">暢遊威尼斯，享受美味的義式料理，搭乘小船穿梭在城市中體驗在地風情。</p>
+
+<!-- mouse -->
+<section class="mouse-block">
+  <div class="mouse"></div>
+  <span class="mouse-text">Scrolling</span>
+</section>
+
+
+<!-- new -->
+<section class="swiper-container2">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="new-title" data-swiper-parallax="-300">
+        <h1>Latest&ensp;news<p class="news-ch">最新消息</p></h1>
+
+        <div class="new-flex">
+        <img src="images/news001.jpg" alt="">
+        
+        <div class="news-text" data-swiper-parallax="-100">
+          <div class="news-subtitle" data-swiper-parallax="-200"><a href="page01.html">義大利度假14日遊<br>~第二人9折優惠~</a></div>
+          <p><a href="page01.html">暢遊威尼斯，享受美味義式料理，搭乘小船穿梭在城市中體驗在地風情。</a></p>
+        </div>
         </div>
       </div>
-      <div class="content_box">
-        <a href="#" class="picture">
-          <img src="images/pexels-alex01.png" alt="攝影師：Alex Azabache，連結：Pexels">
-        </a>
-        <p class="content_text">
-          <h2 class="loading_title">土耳其12日歡樂遊~第二人85折</h2>
-          <p class="loading_text">體驗卡帕多其亞熱氣球，欣賞伊斯蘭教建築典範，不論是自然景觀、美食、歷史、多民族生活面貌，都吸引世界各地的遊客蜂擁而至! </p>
-        </p>
-      </div>
-      <div class="content_box">
-        <a href="#" class="picture">
-          <img src="images/pexels-alexandr01.png" alt="攝影師：Alexandr Podvalny，連結：Pexels">
-        </a>
-        <p class="content_text">
-          <h2 class="loading_title">泰國文化之旅7日行~ 三人成行優待5000元</h2>
-          <p class="loading_text">體驗泰國古老文化，探訪古蹟建築群，大吃泰式美食，一窺泰國文化風情。</p>
-        </p>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="new-title" data-swiper-parallax="-300">
+        <h1>Latest&ensp;News<p class="news-ch">最新消息</p></h1>
+
+        <div class="new-flex">
+        <img src="images/news002.jpg" alt="">
+
+        <div class="news-text" data-swiper-parallax="-100">
+        <div class="news-subtitle" data-swiper-parallax="-200">土耳其12日歡樂遊<br>~第二人85折~</div>
+
+          <p>體驗卡帕多其亞熱氣球，欣賞伊斯蘭教建築典範，不論是自然景觀、美食、歷史、多民族生活面貌，都吸引世界各地的遊客蜂擁而至!</p>
+        </div>
+        </div>
       </div>
     </div>
 
+    <div class="swiper-slide">
+      <div class="new-title" data-swiper-parallax="-300">
+        <h1>Latest&ensp;News<p class="news-ch">最新消息</p></h1>
 
-    <span class="blank1">
-      <div></div>
-      <div class="selsct_enjoy_first">enjoy</div>
+        <div class="new-flex">
+        <img src="images/news003.jpg" alt="">
+
+        <div class="news-text" data-swiper-parallax="-100">
+        <div class="news-subtitle" data-swiper-parallax="-200">泰國文化7日行<br>~第三人優待5000元~</div>
+        
+          <p>體驗泰國古老文化，探訪古蹟建築群，大吃泰式美食，一窺泰國文化風情。</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="swiper-pagination"></div>
+  
+  <div id="banner-btn" class="swiper-button-prev swiper-button-white"></div>
+  <div id="banner-btn" class="swiper-button-next swiper-button-white"></div>
+</section>
+
+<script>
+  var swiper = new Swiper('.swiper-container2', {
+      loop:true,
+      speed: 600,
+      parallax: true,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
+
+
+<!-- tour type -->
+  <section class="tourtype">
+    <h2 class="tourtype-title">Tour&ensp;type<p>行程類型</p></h2>
+    <nav class="accordion arrows">
+      <input type="radio" name="accordion" id="cb1">
+      <section class="box">
+      <label class="box-title" for="cb1">Deep&ensp;Travel&emsp;深度旅行
+      </label>
+      <label class="box-close" for="acc-close"></label>
+        <div class="box-content">
+          <span>HOT</span>
+          <span><a href="#">埃及金字塔深度探尋14天</a></span>
+          <span><a href="#">68,600/人</a></span>
+        </div>
+        <div class="box-content">
+          <span>HOT</span>
+          <span><a href="#">非洲草原極限冒險18天</a></span>
+          <span><a href="#">76,600/人</a></span>
+        </div>
+        <div class="box-content type-more">
+          <a href="#">+ More</a>
+        </div>
+    </section>
+    <input type="radio" name="accordion" id="cb2">
+    <section class="box">
+      <label class="box-title" for="cb2">Package&ensp;Tour&emsp;主題旅遊</label>
+      <label class="box-close" for="acc-close"></label>
+      <div class="box-content">
+        <span>HOT</span>
+        <span><a href="#">日本賞櫻8日行</a></span>
+        <span><a href="#">32,000/人</a></span>
+      </div>
+      <div class="box-content">
+        <span>HOT</span>
+        <span><a href="#">英國13天</a></span>
+        <span><a href="#">72,800/人</a></span>
+      </div>
+      <div class="box-content type-more">
+        <a href="#">+ More</a>
+      </div>
+    </section>
+    <input type="radio" name="accordion" id="cb4">
+    <section class="box">
+      <label class="box-title" for="cb4">Accommodation&emsp;住宿優惠</label>
+      <label class="box-close" for="acc-close"></label>
+      <div class="box-content">
+        <span>HOT</span>
+        <span><a href="#">香港圓環酒店30OFF</a></span>
+        <span><a href="#">2,800起</a></span>
+      </div>
+      <div class="box-content">
+        <span>HOT</span>
+        <span><a href="#">澳門威尼斯人</a></span>
+        <span><a href="#">4,200起</a></span>
+      </div>
+      <div class="box-content type-more">
+        <a href="#">+ More</a>
+      </div>
+    </section>
+    <input type="radio" name="accordion" id="acc-close">
+  </nav>
+</section>
+
+<script>
+  TweenMax.to(".box-content span:nth-child(1)", 1,{duration:2.5,ease: "sine.out", y:-5,repeat : -1 });
+</script>
+
+<!-- tour type-m -->
+<div class="tourtype-m">
+  <h2 class="tourtype-title">Tour&ensp;type<p>行程類型</p></h2>
+
+<div id="wrapper">
+<div id="left-side">
+  <ul>
+    <li class="choose active">
+      &ensp;深度旅行
+    </li>
+    <li class="pay">
+      &ensp;主題旅遊
+    </li>
+    <li class="wrap">
+      &ensp;住宿優惠
+    </li>
+  </ul>
+</div>
+
+<div id="border">
+  <div id="line" class="one"></div>
+</div>
+
+<div id="right-side">
+  <div id="first" class="active">
+    <h2><span>HOT</span><a href="#">&emsp;埃及金字塔深度探尋14天</a></h2>
+    <h3><a href="#">68,600/人</a></h3>
+    <br>
+    <h2><span>HOT</span><a href="#">&emsp;非洲草原極限冒險18天</a></h2>
+    <h3><a href="#">76,600/人</a></h3>
+
+    <p>給旅行者更為專業的導覽及旅行，專家亦可自行開團。</p>
+  </div>
+
+  <div id="second">
+    <h2><span>HOT</span><a href="#">&emsp;日本賞櫻8日行</a></h2>
+    <h3><a href="#">32,000/人</a></h3>
+    <br>
+    <h2><span>HOT</span><a href="#">&emsp;英國13天</a></h2>
+    <h3><a href="#">72,800/人</a></h3>
+
+    <p>多種旅遊行程，休閒輕旅行。</p>
+  </div>
+
+  <div id="third">
+    <h2><span>HOT</span><a href="#">&emsp;香港圓環酒店30OFF</a></h2>
+    <h3><a href="#">2,800起</a></h3>
+    <br>
+    <h2><span>HOT</span><a href="#">&emsp;澳門威尼斯人</a></h2>
+    <h3><a href="#">4,200起</a></h3>
+
+    <p>以較優惠的住宿價格，享受旅行。</p>
+  </div>
+</div>
+</div>
+ 
+
+
+</div>
+
+<script>
+  TweenMax.to("#first span,#second span,#third span", 1,{duration:2.5,ease: "sine.out", y:-5,repeat : -1 });
+</script>
+
+<script>
+  $(".choose").click(function() {
+  $(".choose").addClass("active");
+  $(".choose > .icon").addClass("active");
+  $(".pay").removeClass("active");
+  $(".wrap").removeClass("active");
+  $(".ship").removeClass("active");
+  $(".pay > .icon").removeClass("active");
+  $(".wrap > .icon").removeClass("active");
+  $(".ship > .icon").removeClass("active");
+  $("#line").addClass("one");
+  $("#line").removeClass("two");
+  $("#line").removeClass("three");
+  $("#line").removeClass("four");
+})
+
+$(".pay").click(function() {
+  $(".pay").addClass("active");
+  $(".pay > .icon").addClass("active");
+  $(".choose").removeClass("active");
+  $(".wrap").removeClass("active");
+  $(".ship").removeClass("active");
+  $(".choose > .icon").removeClass("active");
+  $(".wrap > .icon").removeClass("active");
+  $(".ship > .icon").removeClass("active");
+  $("#line").addClass("two");
+  $("#line").removeClass("one");
+  $("#line").removeClass("three");
+  $("#line").removeClass("four");
+})
+
+$(".wrap").click(function() {
+  $(".wrap").addClass("active");
+  $(".wrap > .icon").addClass("active");
+  $(".pay").removeClass("active");
+  $(".choose").removeClass("active");
+  $(".ship").removeClass("active");
+  $(".pay > .icon").removeClass("active");
+  $(".choose > .icon").removeClass("active");
+  $(".ship > .icon").removeClass("active");
+  $("#line").addClass("three");
+  $("#line").removeClass("two");
+  $("#line").removeClass("one");
+  $("#line").removeClass("four");
+})
+
+$(".ship").click(function() {
+  $(".ship").addClass("active");
+  $(".ship > .icon").addClass("active");
+  $(".pay").removeClass("active");
+  $(".wrap").removeClass("active");
+  $(".choose").removeClass("active");
+  $(".pay > .icon").removeClass("active");
+  $(".wrap > .icon").removeClass("active");
+  $(".choose > .icon").removeClass("active");
+  $("#line").addClass("four");
+  $("#line").removeClass("two");
+  $("#line").removeClass("three");
+  $("#line").removeClass("one");
+})
+
+$(".choose").click(function() {
+  $("#first").addClass("active");
+  $("#second").removeClass("active");
+  $("#third").removeClass("active");
+  $("#fourth").removeClass("active");
+})
+
+$(".pay").click(function() {
+  $("#first").removeClass("active");
+  $("#second").addClass("active");
+  $("#third").removeClass("active");
+  $("#fourth").removeClass("active");
+})
+
+$(".wrap").click(function() {
+  $("#first").removeClass("active");
+  $("#second").removeClass("active");
+  $("#third").addClass("active");
+  $("#fourth").removeClass("active");
+})
+
+$(".ship").click(function() {
+  $("#first").removeClass("active");
+  $("#second").removeClass("active");
+  $("#third").removeClass("active");
+  $("#fourth").addClass("active");
+})
+</script>
+
+
+
+<!-- forum -->
+<h2 class="forum-title"></p></h2>
+<!-- <h2 class="forum-title">Forum<p>討論區</p></h2> -->
+<section class="swiper-container f4">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <figure class="snip">
+        <blockquote>旅程很精采!!</blockquote>
+        <div class="author">
+          <img src="images/people01.png">
+          <h5>Steve</h5>
+          <!-- <h5>Steve<span> LittleSnippets</span></h5> -->
+        </div>
+      </figure>
+    </div>
+    <div class="swiper-slide">
+      <figure class="snip hover">
+        <blockquote>土耳其的行程相當有趣，時間安排妥當，享受這一次的旅行。</blockquote>
+        <div class="author">
+          <img src="images/people02.png">
+          <h5>Max</h5>
+          <!-- <h5>Max<span> LittleSnippets</span></h5> -->
+        </div>
+      </figure>
+    </div>
+    <div class="swiper-slide">
+      <figure class="snip">
+        <blockquote>在希臘待了1個多月，體驗當地的生活，非常高興能有這樣的行程，讓我體驗不同的文化色彩。</blockquote>
+        <div class="author">
+          <img src="images/people03.png">
+          <h5>Eleanor</h5>
+          <!-- <h5>Eleanor<span> LittleSnippets</span></h5> -->
+        </div>
+      </figure>
+    </div>
+  </div>
+  <button class="learn-more" id="">
+    <span class="circle" aria-hidden="true">
+      <span class="icon arrow"></span>
     </span>
+    <span class="button-text">進入討論區</span>
+  </button>
+  <!-- <div class="swiper-button-next4"></div>
+  <div class="swiper-button-prev4"></div> -->
+
+</section>
 
 
-    <div class="topic_select">
-      <div class="select_title">
-        <div class="select_choose"> tour type
-          <div class="select_choose_cn">選擇行程類型</div>
-        </div>
-        <div class="select_enjoy">the journey</div>
-      </div>
-    <div class="select_item">
-        <div class="select_box">
-          <div class="select_bg">
-            <img src="images/deep-travel01.png" alt="">
-          </div>
-          <div class="select_text">
-            <h3 class="select_en">Deep<br>Travel</h3>
-            <p class="select_cn">深度旅行</p>
-            <a href="#" class="select_arrow">
-              <img src="images/rightwhite.png" alt="">
-            </a>
-          </div>
-        </div>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    // navigation: {
+    //   nextEl: '.swiper-button-next4',
+    //   prevEl: '.swiper-button-prev4',
+    // },
+    loop:true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+      
 
-        <div class="select_box">
-          <div class="select_bg">
-            <img src="images/pexels-vincent01.png" alt="攝影師：Vincent Rivaud，連結：Pexels">
-          </div>
-          <div class="select_text">
-            <h3 class="select_en">Package<br>Tour</h3>
-            <p class="select_cn">主題旅遊</p>
-            <a href="#" class="select_arrow">
-              <img src="images/rightwhite.png" alt="">
-            </a>
-          </div>
-        </div>
-
-        <div class="select_box">
-          <div class="select_bg">
-            <img src="images/Free-travel01.png" alt="">
-          </div>
-          <div class="select_text">
-            <h3 class="select_en">Self-guided<br>Tour</h3>
-            <p class="select_cn">自由行</p>
-            <a href="#" class="select_arrow">
-              <img src="images/rightwhite.png" alt="">
-            </a>
-          </div>
-        </div>
-
-        <div class="select_box">
-          <div class="select_bg">
-            <img src="images/accommodation01.png" alt="">
-          </div>
-          <div class="select_text">
-            <h3 class="select_en">Accommodation<br>Offer</h3>
-            <p class="select_cn">住宿優惠</p>
-            <a href="#" class="select_arrow">
-              <img src="images/rightwhite.png" alt="">
-            </a>
-          </div>
-        </div>
-    </div>
-    </div>
-
-
-    <div class="discuss_area">
-      <div class="discuss_block">
-        <video id="discussvideo"  autoplay muted loop alt="攝影師：Taryn Elliott，連結：Pexels">
-          <source src="video/video.mp4" type="video/mp4">
-        </video>
-        <div class="discuss_bg">
-          <h3 class="discuss_title">Forum</h3>
-          <p class="discuss_text">
-            進入討論區與其他參與旅行的探訪者一起分享旅行的經驗與趣事吧!
-          </p>
-          <a href="#" class="discuss_arrow">
-            <img src="images/right.png" alt="">
-          </a>
+<!-- recommand -->
+  <section class="recommand">
+    <h2 class="recommand-title">Recommend<p>推薦行程</p></h2>
+    
+    <main class="page-content">
+      <div class="card">
+        <div class="content">
+          <h2 class="title">北海道冬日9日遊</h2>
+          <p class="copy">和可愛的雪橇犬一同出遊、體驗冰上釣魚並且現場料理，還有機會參加期間限定札幌白色燈彩節。</p>
+          <span class="card__category">
+            <img src="images/flag/japan_flag.png" alt="">日本&emsp;42,000/人
+          </span>
+          <button class="btn">Enter</button>
         </div>
       </div>
-    </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">義大利古蹟巡禮18日遊</h2>
+          <p class="copy">專門走訪義大利著名的古蹟景點，藉由專業的導覽解說了解原由背景，橫跨南北兩端，深入了解文化脈絡。</p>
+          <span class="card__category">
+            <img src="images/flag/italic.png" alt="">
+            義大利&emsp;78,000/人</span>
+          <button class="btn">Enter</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">西班牙14日建築探訪團</h2>
+          <p class="copy">參訪西班牙名建築，並由資深建築師帶領，達到輕鬆學習的效果。</p>
+          <span class="card__category">
+            <img src="images/flag/Spain.png" alt="">
+            西班牙&emsp;72,000/人</span>
+          <button class="btn">Enter</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">希臘短期休閒假期</h2>
+          <p class="copy">1個月體驗希臘在地生活，試著在有限的時間內融入當地，感受文化差異的衝擊。</p>
+          <span class="card__category">
+            <img src="images/flag/Greece.png" alt="">
+            希臘&emsp;88,000/人</span>
+          <button class="btn">Enter</button>
+        </div>
+      </div>
+    </main>
+  </section>
 
 
-    <div class="recommand">
-      <h2 class="recommand_text1">Recommend</h2>
-      <h2 class="recomand_text2">推薦行程</h2>
-      <a href="#" class="recommand_more">+ More</a>
-    </div>
+  <!-- popular -->
+  <section class="popcity">
+    <h2 class="popcity-title">Popular&ensp;cities<p>熱門城市</p></h2>
 
-    <div class="card_area">
-      <div class="card_section">
-        <section class="cards">
-          <article class="card card--1">
-            <div class="card__info-hover"></div>
-            <div class="card__img"></div>
-            <a href="#" class="card_link">
-              <div class="card__img--hover"></div>
-            </a>
-            <div class="card__info">
-              <span class="card__category">
-                <img src="images/flag/japan_flag.png" alt="">日本
-              </span>
-              <h3 class="card__title">北海道冬日6日遊</h3>
-              <span class="card__by">in <span class="card__author" title="author">亞洲</span></span>
+    <div class="wrapper">
+      <div class="cols">
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front roma">
+                <div class="inner">
+                  <p>Roma&ensp;羅馬</p>
+                  <span><a href="#">✈ 進入</a></span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>羅馬  ▎ 世界著名的歷史文化名城，古羅馬文明的發祥地被暱稱為「永恆之城」。</p>
+                  <a href="#">✈ 進入</a>
+                </div>
+              </div>
             </div>
-          </article>
-
-          <article class="card card--2">
-            <div class="card__info-hover"></div>
-            <div class="card__img"></div>
-            <a href="#" class="card_link">
-              <div class="card__img--hover"></div>
-            </a>
-            <div class="card__info">
-              <span class="card__category">
-                <img src="images/flag/italic.png" alt="">
-                義大利</span>
-              <h3 class="card__title">義大利古蹟巡禮13日遊</h3>
-              <span class="card__by">in <span class="card__author" title="author">南歐</span></span>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front newyork">
+                <div class="inner">
+                  <p>New York&ensp;紐約</p>
+                  <span><a href="#">✈ 進入</a></span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>紐約  ▎ 為全球經濟、商業、金融、媒體、政治、教育和娛樂具有極大影響力的國際大都會。</p>
+                  <a href="#">✈ 進入</a>
+                </div>
+              </div>
             </div>
-          </article>  
-          
-          <article class="card card--3">
-            <div class="card__info-hover"></div>
-            <div class="card__img"></div>
-            <a href="#" class="card_link">
-              <div class="card__img--hover"></div>
-            </a>
-            <div class="card__info">
-              <span class="card__category">
-                <img src="images/flag/Spain.png" alt="">
-                西班牙</span>
-              <h3 class="card__title">西班牙建築探訪團</h3>
-              <span class="card__by">in <span class="card__author" title="author">南歐</span></span>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front osaka">
+                <div class="inner">
+                  <p>Osaka&ensp;大阪</p>
+                  <span><a href="#">✈ 進入</a></span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>大阪  ▎ 西日本最大都市和經濟中心，也以其獨特的庶民文化而著稱。</p>
+                  <a href="#">✈ 進入</a>
+                </div>
+              </div>
             </div>
-          </article>
-
-          <article class="card card--4">
-            <div class="card__info-hover"></div>
-            <div class="card__img"></div>
-            <a href="#" class="card_link">
-              <div class="card__img--hover"></div>
-            </a>
-            <div class="card__info">
-              <span class="card__category">
-                <img src="images/flag/Greece.png" alt="">
-                希臘</span>
-              <h3 class="card__title">希臘短期休閒假期</h3>
-              <span class="card__by">in <span class="card__author" title="author">南歐</span></span>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front taipei">
+                <div class="inner">
+                  <p>Taipei&ensp;台北</p>
+                  <span><a href="#">✈ 進入</a></span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>台北  ▎ 現代感的城市融合日本殖民時期遺留的街巷及當代風格的建築。</p>
+                  <a href="#">✈ 進入</a>
+                </div>
+              </div>
             </div>
-          </article>
-        </section>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front kyoto">
+                <div class="inner">
+                  <p>Kyoto&ensp;京都</p>
+                  <span><a href="#">✈ 進入</a></span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>京都  ▎ 與東京並列為現今日本最具代表性的文化櫥窗。</p>
+                  <a href="#">✈ 進入</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front florence">
+                <div class="inner">
+                  <p>Florence&ensp;佛羅倫斯</p>
+                  <span><a href="#">✈ 進入</a></span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>佛羅倫斯  ▎ 被認為是文藝復興運動的誕生地，藝術與建築的搖籃之一。</p>
+                  <a href="#">✈ 進入</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+  </section>
+
+<!-- footer -->
+  <section class="footer">
+    <about id="about">
+      <h2><span>About us</span></h2>
+    </about>
+
+      <div class="footer-block1">
+        <div class="row">
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="">
+              <span>台北市中山區中山路283號8樓</span>
+            </div>
+          </div>
+          <div class="">
+            <div class="phone">
+              <i class="fas fa-phone-alt"></i>
+                <div class="">
+                    <span>02 - 28773649</span>
+                </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="email">
+              <i class="fas fa-envelope"></i>
+                <div class="">   
+                  <span>Travelbag_tour@hinet.net</span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-cta"></div>
+      <div class="footer-block3">
+          <div class="">
+            <div class="">
+              <div class="footer-link-text">
+                <h3>服務項目</h3>
+              </div>
+              <div class="footer-detail">
+                <ul>
+                  <li>
+                    <a href="#">深度旅行</a>
+                  </li>
+                  <li>
+                    <a href="#">主題旅遊</a>
+                  </li>
+                  <li>
+                    <a href="#">住宿優惠</a>
+                  </li>
+                  <li>
+                    <a href="#">隱私權政策</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div> 
+      
+      <div class="footer-block2">
+        <div class="row">
+          <div class="footer-left">
+            <div class="footer-social-icon">
+              <h3>關注我們</h3>
+              <div class="footer-social-item">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+       
+        <div class="footer-right">
+          <div class="footer-widget-tital">
+            <h3>訂閱</h3>
+          </div>
+
+          <div class="subscribe-form">
+            <form action="#">
+              <input type="text" placeholder="Email Address">
+              <button><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- footer-sm -->
+      <div class="footer-left-s">
+        <div class="footer-social-icon">
+          <h3>關注我們</h3>
+          <div class="footer-social-item">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-right-s">
+        <div class="footer-widget-tital">
+          <h3>訂閱</h3>
+        </div>
+
+        <div class="subscribe-form">
+          <form action="#">
+            <input type="text" placeholder="Email Address">
+            <button><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>   
+
+
+  <!-- copyright -->
+  <section>
+    <div class="copyright-area">
+      <div class="">
+        <div class="">
+          <div class="">
+            <div class="copyright-text">
+              <p>Copyright &copy; Travalbag Travel CO., LTD.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-
-    <div class="popular_cities">
-      <h2 class="popular_text1">Popular</h2>
-      <h2 class="popular_text2">探索熱門城市</h2>
-    </div>
-    <article class="flow">
-      <div class="team">
-        <ul class="auto-grid" role="list">
-          <li>
-            <a href="#" target="#" class="profile">
-              <h3 class="profile__name">Roma</h3>
-              <p>羅馬</p>
-              <img src="images/city/poproma.png" alt="攝影師：Julius Silver，連結：Pexels">
-            </a>
-          </li>
-          <li>
-            <a href="#" target="#" class="profile">
-              <h3 class="profile__name">New York</h3>
-              <p>紐約</p>
-              <img src="images/city/popnewyork.png" alt="攝影師：Daniel Bendig，連結：Pexels" >
-            </a>
-          </li>
-          <li>
-            <a href="#" target="#" class="profile">
-              <h3 class="">Osaka</h3>
-              <p>大阪</p>
-              <img  src="images/city/poposaka.png">
-            </a>
-          </li>
-          <li>
-            <a href="#" target="#" class="profile">
-              <h3 class="profile__name">Taipei</h3>
-              <p>台北</p>
-              <img src="images/city/poptaipei.png" >
-            </a>
-          </li>
-          <li>
-            <a href="#" target="#" class="profile">
-              <h3 class="profile__name">Kyoto</h3>
-              <p>京都</p>
-              <img src="images/city/popKyoto.png" alt="攝影師：Satoshi Hirayama，連結：Pexels">
-            </a>
-          </li>
-          <li>
-            <a href="#" target="#" class="profile">
-              <h3 class="profile__name">Florence</h3>
-              <p>佛羅倫斯</p>
-              <img src="images/city/popflorence.png" >
-            </a>
-          </li>
-        </ul>
-      </div>
-    </article>
-
-    <div class="map_area">
-      <h3 class="map_title">location</h3>
-      <div class="map_block">
-        <ul class="map_item">
-          <li class="map_pic"><img src="images/office2.png" alt="攝影師：Pew Nguyen，連結：Pexels"></li>
-          <li class="map_text"><span class="map_text_first">台北總公司</span>
-          <br>台北市中山區南京東路二段10號10樓
-          <br>(02) 29383764</li>
-        </ul>
-        <ul class="map_item">
-          <li class="map_pic"><img src="images/office1.png"></li>
-          <li class="map_text"><span class="map_text_first">台中分公司</span>
-          <br>台中市西屯區台灣大道三段220號8樓
-          <br>(04) 28374655</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer_area">
-      <div class="footer_block">
-        <ul class="footer_item">
-          <li class="footer_title">服務項目</li>
-          <a href="#" class="footer_text"><li>深度旅行</li></a>
-          <a href="#" class="footer_text"><li>主題旅遊</li></a>
-          <a href="#" class="footer_text"><li>自由行</li></a>
-          <a href="#" class="footer_text"><li>住宿優惠</li></a>
-          <a href="#" class="footer_text"><li>討論區</li></a>
-        </ul>
-        <ul class="footer_item">
-          <a href="#" class="footer_text"><li>最新消息</li></a>
-          <a href="#" class="footer_text"><li>最新優惠</li></a>
-          <a href="#" class="footer_text"><li>隱私權政策</li></a>
-        </ul>
-        <ul class="footer_item">
-          <a href="#" class="footer_text"><li>
-            <span class="footer_icon"><img src="images/sFacebook.png" alt=""></span> Facebook專頁</li></a>
-          <a href="#" class="footer_text"><li>
-            <span class="footer_icon"><img src="images/sinstagram.png" alt=""></span> Instagram專頁</li></a>
-          <a href="#" class="footer_text"><li>
-            <span class="footer_icon"><img src="images/sYoutube.png" alt=""></span> Youtube專頁</li></a>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer_secret">
-      <span class="footer_secret_text">© Travalbag TRAVEL SERVICE CO., LTD.</span>
-    </div>
-
+  </section>
 </body>
 </html>

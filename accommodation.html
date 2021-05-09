@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelbag</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/accommodation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  
+</head>
+<body>
+  <!-- header section start -->
+<header>
+  <nav class="navbar">
+    <ul>
+      <li style="--i:1;"><a href="index.html">首頁</a></li>
+      <li style="--i:2;"><a href="deep.html">深度旅行</a></li>
+      <li style="--i:3;"><a href="theme.html">主題旅遊</a></li>
+      <li style="--i:4;"><a href="discussion.html">討論區</a></li>
+      <li style="--i:5;"><a href="#">登入 / 註冊</a></li>
+    </ul>
+  </nav>
+
+  
+  <div class="menu drop-shadow"><i class="fas fa-bars "></i></div>
+
+</header>
+<!-- header section end -->
+
+<!-- home section start -->
+<section class="site" id="site">
+  <div class="site-bg">
+    <img src="images/accommodation/hotel-bg01.jpg" alt="">
+    <div class="site-bgtext">
+      <h1>DISCOVER</h1>
+      <h3>住宿優惠</h3>
+      <button class="site-btn">Explore</button>
+    </div>
+  </div>
+</section>
+<!-- home section end -->
+
+
+<!-- booking section start -->
+<section class="booking">
+  <div class="bk-container">
+    <form class="book-form">
+
+      <div class="input-group">
+        <label for="destination" class="input-label">目的地</label>
+        <input type="text" class="input">
+      </div>
+
+      <div class="input-group">
+        <label for="check-in" class="input-label">訂房日期</label>
+        <input type="date" class="input">
+      </div>
+
+      <div class="input-group">
+        <label for="check-out" class="input-label">退房日期</label>
+        <input type="date" class="input">
+      </div>
+
+      <div class="input-group">
+        <label for="adults" class="input-label">大人</label>
+        <select class="options" id="">
+          <option value="0">0</option>
+          <option value="0">1</option>
+          <option value="0">2</option>
+          <option value="0">3</option>
+          <option value="0">4</option>
+          <option value="0">5</option>
+        </select>
+      </div>
+
+      <div class="input-group children"> 
+        <label for="adults" class="input-label">小孩</label>
+        <select class="options" id="">
+          <option value="0">0</option>
+          <option value="0">1</option>
+          <option value="0">2</option>
+          <option value="0">3</option>
+          <option value="0">4</option>
+          <option value="0">5</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn form-btn">search
+        <!-- <span class="dots"></span> -->
+      </button>
+    </form>
+  </div>
+</section>
+<!-- booking section end -->
+
+<!-- news start -->
+<section>
+  <div class="news">
+    <div class="news-container">
+
+      <!-- <h3 class="main-title-s">最新活動</h3>
+      <h2 class="main-title">Latest news</h2> -->
+
+      <div class="owl-carousel owl-theme news-post">
+
+        <div class="news-content">
+          <img src="images/accommodation/Hong-Kong01.png" alt="">
+          <div class="news-title">
+            <h3>香港圓環酒店30OFF</h3>
+            <span>2,800起/人</span>
+            <button class="btn-news">More</button> 
+          </div>
+        </div>
+
+        <div class="news-content">
+          <img src="images/accommodation/Venetian-Macao01.png" alt="">
+          <div class="news-title">
+            <h3>澳門威尼斯人</h3>
+            <span>4,200起/人</span>
+            <button class="btn-news">More</button> 
+          </div>
+        </div>
+
+        <div class="news-content">
+          <img src="images/accommodation/Hong-Kong01.png" alt="">
+          <div class="news-title">
+            <h3>香港圓環酒店30OFF</h3>
+            <span>2,800起/人</span>
+            <button class="btn-news">More</button> 
+          </div>
+        </div>
+
+        <div class="news-content">
+          <img src="images/accommodation/Venetian-Macao01.png" alt="">
+          <div class="news-title">
+            <h3>澳門威尼斯人</h3>
+            <span>4,200起/人</span>
+            <button class="btn-news">More</button> 
+          </div>
+        </div>
+      </div>
+      <div class="owl-navigation">
+        <i class="owl-nav-prev fas fa-long-arrow-alt-left"></i>
+        <i class="owl-nav-next fas fa-long-arrow-alt-right"></i>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- news end -->
+
+<!-- all tour start -->
+<section>
+<h3 class="main-title-s">所有住宿</h3>
+<h2 class="main-title">All tours</h2>
+
+<div class="grid">
+  <div class="grid-item">
+    <img src="images/accommodation/all001.png" alt="">
+    <h2>Macta resort</h2>
+    <p class="place"><i class="fas fa-map-marked-alt"></i> 馬爾地夫</p>
+    <p class="price">NTD 2,300起/人</p>
+    <button class="all-btn">read more</button>
+  </div>
+
+  <div class="grid-item grid-item--width2">
+    <img src="images/accommodation/all002.png" alt="">
+    <h2>Lieomana resort</h2>
+    <p class="place"><i class="fas fa-map-marked-alt"></i> 印尼, 峇里島</p>
+    <p class="price">NTD 3,400起/人</p>
+    <button class="all-btn">read more</button>
+  </div>
+
+  <div class="grid-item">
+    <img src="images/accommodation/all003.png" alt="">
+    <h2>Cosia hotel</h2>
+    <p class="place"><i class="fas fa-map-marked-alt"></i> 希臘, Corfu</p>
+    <p class="price">NTD 3,660起/人</p>
+    <button class="all-btn">read more</button>
+  </div>
+
+  <div class="grid-item">
+    <img src="images/accommodation/all004.png" alt="">
+    <h2>Micoli hotel</h2>
+    <p class="place"><i class="fas fa-map-marked-alt"></i> 印尼, 峇里島</p>
+    <p class="price">NTD 3,920起/人</p>
+    <button class="all-btn">read more</button>
+  </div>
+
+  <div class="grid-item">
+    <img src="images/accommodation/all005.png" alt="">
+    <h2>Havwan hotel</h2>
+    <p class="place"><i class="fas fa-map-marked-alt"></i> 夏威夷</p>
+    <p class="price">NTD 3,880起/人</p>
+    <button class="all-btn">read more</button>
+  </div>
+
+  <div class="grid-item">
+    <img src="images/accommodation/all006.png" alt="">
+    <h2>Falani resort</h2>
+    <p class="place"><i class="fas fa-map-marked-alt"></i> 斐濟</p>
+    <p class="price">NTD 3,860起/人</p>
+    <button class="all-btn">read more</button>
+  </div>
+
+  <div class="grid-item">
+    <img src="images/accommodation/all007.png" alt="">
+    <h2>Mataon hotel</h2>
+    <p class="place"><i class="fas fa-map-marked-alt"></i> 希臘 , Crete</p>
+    <p class="price">NTD 2,800起/人</p>
+    <button class="all-btn">read more</button>
+  </div>
+
+  <div class="grid-item">
+    <img src="images/accommodation/all008.png" alt="">
+    <h2>澳門威尼斯人</h2>
+    <p class="place"><i class="fas fa-map-marked-alt"></i> 澳門</p>
+    <p class="price">NTD 4,200起/人</p>
+    <button class="all-btn">read more</button>
+  </div>
+
+  <div class="grid-item">
+    <img src="images/accommodation/all009.png" alt="">
+    <h2>香港圓環酒店</h2>
+    <p class="place"><i class="fas fa-map-marked-alt"></i> 香港</p>
+    <p class="price">NTD 2,800起/人</p>
+    <button class="all-btn">read more</button>
+  </div>
+
+</div>
+<div class="pagination">
+  <a href="#"><i class="fas fa-chevron-left"></i></a>
+  <a href="#" class="page">1</a>
+  <a href="#" class="page">2</a>
+  <a href="#" class="page">3</a>
+  <a href="#"><i class="fas fa-chevron-right"></i></a>
+</div>
+</section>
+<!-- all tour end -->
+
+<!-- footer -->
+<section class="footer">
+  <about id="about">
+    <h2><span>About us</span></h2>
+  </about>
+
+    <div class="footer-block1">
+      <div class="row">
+        <div class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="">
+            <span>台北市中山區中山路283號8樓</span>
+          </div>
+        </div>
+        <div class="">
+          <div class="phone">
+            <i class="fas fa-phone-alt"></i>
+              <div class="">
+                  <span>02 - 28773649</span>
+              </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="email">
+            <i class="fas fa-envelope"></i>
+              <div class="">   
+                <span>Travelbag_tour@hinet.net</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="single-cta"></div>
+    <div class="footer-block3">
+        <div class="">
+          <div class="">
+            <div class="footer-link-text">
+              <h3>服務項目</h3>
+            </div>
+            <div class="footer-detail">
+              <ul>
+                <li>
+                  <a href="#">深度旅行</a>
+                </li>
+                <li>
+                  <a href="#">主題旅遊</a>
+                </li>
+                <li>
+                  <a href="#">住宿優惠</a>
+                </li>
+                <li>
+                  <a href="#">隱私權政策</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div> 
+    
+    <div class="footer-block2">
+      <div class="row">
+        <div class="footer-left">
+          <div class="footer-social-icon">
+            <h3>關注我們</h3>
+            <div class="footer-social-item">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+     
+      <div class="footer-right">
+        <div class="footer-widget-tital">
+          <h3>訂閱</h3>
+        </div>
+
+        <div class="subscribe-form">
+          <form action="#">
+            <input type="text" placeholder="Email Address">
+            <button><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- footer-sm -->
+    <div class="footer-left-s">
+      <div class="footer-social-icon">
+        <h3>關注我們</h3>
+        <div class="footer-social-item">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-right-s">
+      <div class="footer-widget-tital">
+        <h3>訂閱</h3>
+      </div>
+
+      <div class="subscribe-form">
+        <form action="#">
+          <input type="text" placeholder="Email Address">
+          <button><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>   
+
+
+<!-- copyright -->
+  <div class="copyright-area">
+    <div class="">
+      <div class="">
+        <div class="">
+          <div class="copyright-text">
+            <p>Copyright &copy; Travalbag Travel CO., LTD.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+  <script src="js/accommodation.js"></script>
+</body>
+</html>
