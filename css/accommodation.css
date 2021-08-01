@@ -312,7 +312,7 @@ input,
   }
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:420px){
   .input-label{
     font-size: 1.1rem;
   }
@@ -425,7 +425,7 @@ input,
   box-sizing: border-box;
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:420px){
   .main-title-s{
     font-size: 1rem;
   }

@@ -42,24 +42,19 @@ a{
 }
 
 /* header */
-header .menu{
-  position: fixed;
-  top: .6em;
-  right: .8em;
-  font-size: 4em;
+.menu{
   color: var(--orange);
   cursor: pointer;
-  z-index: 999;
   overflow: hidden;
+  width: 2rem;
+  padding-top: .2rem;
 }
 
-.drop-shadow {
-  -webkit-filter: drop-shadow(4px 4px 2px rgba(255, 255, 255, 0.3));
-  filter: drop-shadow(4px 4px 2px rgba(255, 255, 255, 0.3));
+.menu img{
+  width: 100%;
 }
 
-
-header .navbar{
+.navbar{
   height: 100vh;
   width: 30rem;
   position: fixed;
@@ -67,18 +62,20 @@ header .navbar{
   right: 0;
   background: #111;
   display: none;
+  z-index: 888;
 }
 
-header .navbar ul{
+.navbar ul{
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-top: 5rem;
+  padding-left: 6rem;
   flex-flow: column;
   height: 100%;
   list-style: none;
 }
 
-header .navbar ul li{
+.navbar ul li{
   margin-top: 3em;
   animation: fadeIn .2s linear backwards;
   animation-delay: calc(.3s*var(--i));
@@ -91,48 +88,81 @@ header .navbar ul li{
   }
 }
 
-header .navbar ul li a{
-  font-size: 2.2em;
+.navbar ul li a{
+  font-size: 1.3rem;
   color: #fff;
   text-decoration: none;
 }
 
-header .navbar ul li a:hover{
+.navbar ul li a:hover{
   color: var(--orange);
 }
 
-.fa-times{
-  transform: rotate(180deg) skew(-180deg);
+header{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
 }
 
-
-
-@media screen and (max-width:640px){
-  header{
-    font-size: 55%;
-  }
-
-  header .navbar{
-    width: 16.5rem;
-  }
-
-  .nav-toggle{
-    transform:translateX(-16.5rem);
-  }
-
+.nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem 1.2rem 0 1.2rem;
+  box-sizing: border-box;
 }
 
-@media screen and (max-width:768px){
-  header{
-    font-size: 55%;
-  }
+.header{
+  display: flex;
+  justify-content: space-between;
+}
 
-  header .navbar{
-    width: 16.5rem;
-  }
+.logo{
+  width: 7rem;
+}
 
-  .nav-toggle{
-    transform:translateX(-16.5rem);
+.logo img{
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .logo{
+    width: 10rem;
+  }
+  .navbar ul{
+    padding-right: 6rem;
+  }
+  .navbar ul li a{
+    font-size: 1.6rem;
+  }
+  .menu{
+    width: 2.6rem;
+  }
+  .nav{
+    padding: 2rem 1.6rem 0 1.6rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+ .logo{
+    width: 14rem;
+  }
+  .menu{
+    width: 3.2rem;
+    padding-top: 1rem;
+  }
+  .nav{
+    padding: 2rem 2rem 0 2rem;
+  }
+  .navbar ul li a{
+    font-size: 1.8rem;
+  }
+  .navbar ul li{
+    margin-top: 4.2rem;
+  }
+  .navbar ul{
+    padding-top: 8rem;
   }
 }
 
@@ -169,26 +199,17 @@ header .navbar ul li a:hover{
 
 
 
-
-
-
-
-
-
-
-
-
 .bg {
   background-image: url(../images/page/Burano01.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position:center center;
-  padding: 1.5em 1.2em;
+  padding: 1.5rem 1.2rem;
 }
 
 .bg img {
-  width: 7em;
+  width: 7rem;
 }
 
 .nav-container {
@@ -198,9 +219,9 @@ header .navbar ul li a:hover{
 
 .nav-container a {
   color: #fff;
-  margin-top: 7em;
+  margin-top: 10rem;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.6rem;
 }
 
 nav {
@@ -209,16 +230,18 @@ nav {
 }
 
 nav > a {
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .control-bar{
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
-  height: 3em;
+  height: 3rem;
   margin: 0 auto;
-  font-size: .9em;
+  font-size: 1.1rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 .search {
@@ -226,11 +249,11 @@ nav > a {
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 1.5em 0;
+  padding: 1.5rem 0;
 }
 
 .searchTerm {
-  width: 15em;
+  width: 15rem;
   border: 3px solid var(--blue);
   border-right: none;
   padding: 5px;
@@ -257,17 +280,17 @@ nav > a {
 .edit{
   max-width: 1200px;
   text-align: right;
-  padding: 1em 1.2em;
+  padding: 0 3rem;
 }
 
 .edit-btn{
   outline: none;
   border: none;
-  font-size: 1em;
+  font-size: 1.1rem;
   background: #eb8029;
   color: #fff;
-  width: 4.2em;
-  height: 2em;
+  width: 5.4rem;
+  height: 2.4rem;
   cursor: pointer;
 }
 
@@ -276,7 +299,7 @@ nav > a {
 }
 
 .left p{
-  line-height:  3em; ;
+  line-height: 3rem;
 }
 
 .right {
@@ -284,34 +307,35 @@ nav > a {
 }
 
 .pagenav {
-  line-height: 3em;
+  line-height: 3rem;
   list-style: none;
 }
 
 .pagenav li {
   color: #888;
-  border-radius: 4px;
+  border-radius: 1px;
   display: inline-block;
-  font-size: 12pt;
+  font-size: 1.2rem;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 1.8rem;
   margin: 0px;
   padding: 2px 8px;
 }
 
 .thread-list {
   border: none;
-  font-size: 1.1em;
-  width: 100%;
+  font-size: 1.2rem;
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+  letter-spacing: 1px;
 }
 
 .thread-list td {
   background-color: #eee;
   border-top: 1px solid #fff;
   color: #666;
-  padding: 1em 1.2em;
+  padding: 1rem 1.2rem;
 }
 
 .thread-list thead {
@@ -320,42 +344,75 @@ nav > a {
 
 .thread-list thead th {
   font-size: .8em;
-  padding: 1em 1.2em;
-  line-height: 1.3em;
+  padding: 1rem 1.2rem;
+  line-height: 1.3rem;
 }
 
 .thread-title{
-  margin-bottom: .3em;
+  margin-bottom: 1rem;
   display: block;
   cursor: pointer;
 }
 
 .thread-name{
-  font-size: .9em;
+  font-size: 1rem;
   cursor: pointer;
 }
 
 .smallfont{
-  font-size: .9em;
+  font-size: 1rem;
 }
 
 .pagination{
   text-align: center;
-  margin: 4em 0;
+  margin: 4rem 0;
  }
  
  .pagination a{
-   padding: .7em 1em;
+   padding: .7rem 1rem;
    border-radius: 50%;
    color: #333;
-   font-size: 1em;
+   font-size: 1rem;
    font-weight: bold;
-   margin: 0 .3em;
+   margin: 0 .3rem;
  }
  
  .pagination .page{
    background: rgb(100, 100, 100);
    color: #fff;
+ }
+
+ @media screen and (max-width: 420px) {
+  .nav-container a {
+    margin-top: 9rem;
+    font-size: 1.3rem;
+  }
+  nav > a {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .control-bar{
+    height: 4rem;
+    font-size: .9rem;
+  }
+  .search {
+    display: block;
+  }
+  .searchTerm {
+    width: 12rem;
+    margin-left: 4rem;
+    margin-bottom: 1.2rem;
+  }
+  .searchButton {
+    font-size: 18px;
+    margin-left: -0.3rem;
+  }
+  .thread-title{
+    font-size: 1rem;
+  }
+  .smallfont{
+    font-size: .9rem;
+  }
  }
 
 
@@ -365,6 +422,7 @@ nav > a {
   margin: 0 auto;
   width: 80%;
   color: #333;
+  max-width: 1200px;
 }
 
 .single-cta {
@@ -519,15 +577,14 @@ nav > a {
 .subscribe-form button {
     position: absolute;
     right:0;
-    background: #EBB529;
+    background: none;
     padding: 14px 20px;
-    /* border: 1px solid #EBB529; */
     border: 0;
     bottom: 0;
 }
 
 .subscribe-form button i {
-  color: #fff;
+  color: #EBB529;
   font-size: 1.2em;
   transform: rotate(-6deg);
 }
@@ -595,8 +652,8 @@ nav > a {
 .copyright-text p {
   bottom: 0;
   font-size: .8em;
-  color: #ffffff;
+  color: #5c5c5c;
   text-align: center;
-  background-color: #383838;
+  background-color: #d6d6d6;
   padding: .3em 0;
 }
