@@ -12,17 +12,27 @@
 <body>
 <!-- header section start -->
 <header>
-  <nav class="navbar">
-    <ul>
-      <li style="--i:1;"><a href="index.html">首頁</a></li>
-      <li style="--i:2;"><a href="theme.html">主題旅遊</a></li>
-      <li style="--i:3;"><a href="accommodation.html">住宿優惠</a></li>
-      <li style="--i:4;"><a href="discussion.html">討論區</a></li>
-      <li style="--i:5;"><a href="#">登入 / 註冊</a></li>
-    </ul>
-  </nav>
+  <div class="nav">
+  <div class="header">
+    <div class="logo">
+      <img src="images/logo.svg">
+    </div>
+    <div class="menu">
+      <img class="bars" src="images/menu.svg">
+    </div>
+  </div>
+  </div>
 
-  <div class="menu drop-shadow"><i class="fas fa-bars "></i></div>
+    <nav class="navbar">
+      <ul>
+        <li style="--i:1;"><a href="index.html">首頁</a></li>
+        <li style="--i:2;"><a href="theme.html">主題旅遊</a></li>
+        <li style="--i:3;"><a href="accommodation.html">住宿優惠</a></li>
+        <li style="--i:4;"><a href="discussion.html">討論區</a></li>
+        <li style="--i:5;"><a href="#">登入 / 註冊</a></li>
+      </ul>
+    </nav>
+
 </header>
 <!-- header section end -->
 
@@ -32,23 +42,20 @@
     <video src="images/video/video1.mp4" muted loop autoplay></video>
   </div>
 
+  <div class="big">
   <div class="content">
-    <h1>深度旅行</h1>
-    <h3>給旅行者更為專業的導覽及旅行</h3>    
-    
     <div class="form-container">
-      <form action="">
-        <span>
-          <img src="images/logo.svg" alt="">
+      <form>
+        <h1>深度旅行</h1>
+        <h3>給旅行者更為專業的導覽及旅行</h3> 
+
+        <span>探索目地 :&ensp;
+          <input type="text" placeholder="輸入國家 / 城市">
         </span>
-
-        <span>目的地</span>
-        <input type="text" placeholder="輸入國家 / 城市">
-
-        <span>出發時間</span>
-        <input type="date">
-
-        <span>探索類型</span>
+        <span>出發時間 :&ensp;
+          <input type="date">
+        </span>
+        <span>探索類型 :&ensp;
           <select name="travel-form">
           　<option value="">歷史</option>
           　<option value="">自然</option>
@@ -56,10 +63,13 @@
           　<option value="">地質</option>
             <option value="">在地生活</option>
           </select>
+        </span>
 
         <input class="submit-btn" type="submit" value="search">
       </form>
     </div>
+  </div>
+</div>
 </section>
 <!-- home section end -->
 
@@ -75,7 +85,7 @@
         <h3>埃及金字塔深度探尋14天</h3>
         <p>走進金字塔，了解建造背景與方法，體驗沙漠夜晚生活。</p>
         <p>NTD 68,600/人</p>
-        <a href="#"><button class="pop-btn">visit now</button></a>
+        <button class="pop-btn">visit now</button>
       </div>
     </div>
 
@@ -85,7 +95,7 @@
         <h3>非洲草原極限冒險18天</h3>
         <p>體驗非洲原始生活，近距離觀看草原動物，同時參與捕魚活動。</p>
         <p>NTD 76,600/人</p>
-        <a href="#"><button class="pop-btn">visit now</button></a>
+        <button class="pop-btn">visit now</button>
       </div>
     </div>
 
@@ -95,7 +105,7 @@
         <h3>西班牙14日建築探訪團</h3>
         <p>參訪西班牙名建築，並由資深建築師帶領，達到輕鬆學習的效果。</p>
         <p>NTD 72,000/人</p>
-        <a href="#"><button class="pop-btn">visit now</button></a>
+        <button class="pop-btn">visit now</button>
       </div>
     </div>
   </div>
@@ -114,11 +124,9 @@
         <img src="images/deep/roma01.jpg" alt="">
         <div class="card-content">
           <h1>羅馬16天</h1>
-          <p class="card-text">專門走訪義大利著名的古蹟景點，藉由專業的導覽解說了解原由背景，橫跨南北兩端，深入了解文化脈絡。</p>
-          <p>NTD 78,000/人</p>
-          <a href="#"><button class="all-btn">
-            visit now
-          </button></a>
+          <p>專門走訪義大利著名的古蹟景點，藉由專業的導覽解說了解原由背景，橫跨南北兩端，深入了解文化脈絡。</p>
+          <div class="money">NTD 78,000/人</div>
+          <button class="all-btn">visit now</button>
         </div>
       </div>
     </div>
@@ -128,11 +136,9 @@
         <img src="images/deep/greece.png" alt="">
         <div class="card-content">
           <h1>希臘短期休閒假期</h1>
-          <p class="card-text">1個月體驗希臘在地生活，試著在有限的時間內融入當地，感受文化差異的衝擊。</p>
-          <p>NTD 88,000/人</p>
-          <a href="#"><button class="all-btn">
-            visit now
-          </button></a>
+          <p>1個月體驗希臘在地生活，試著在有限的時間內融入當地，感受文化差異的衝擊。</p>
+          <div class="money">NTD 88,000/人</div>
+          <button class="all-btn">visit now</button>
         </div>
       </div>
     </div>
@@ -142,11 +148,9 @@
         <img src="images/deep/roma01.jpg" alt="">
         <div class="card-content">
           <h1>羅馬16天</h1>
-          <p class="card-text">專門走訪義大利著名的古蹟景點，藉由專業的導覽解說了解原由背景，橫跨南北兩端，深入了解文化脈絡。</p>
-          <p>NTD 78,000/人</p>
-          <a href="#"><button class="all-btn">
-            visit now
-          </button></a>
+          <p>專門走訪義大利著名的古蹟景點，藉由專業的導覽解說了解原由背景，橫跨南北兩端，深入了解文化脈絡。</p>
+          <div class="money">NTD 78,000/人</div>
+          <button class="all-btn">visit now</button>
         </div>
       </div>
     </div>
@@ -156,11 +160,9 @@
         <img src="images/deep/greece.png" alt="">
         <div class="card-content">
           <h1>希臘短期休閒假期</h1>
-          <p class="card-text">1個月體驗希臘在地生活，試著在有限的時間內融入當地，感受文化差異的衝擊。</p>
-          <p>NTD 88,000/人</p>
-          <a href="#"><button class="all-btn">
-            visit now
-          </button></a>
+          <p>1個月體驗希臘在地生活，試著在有限的時間內融入當地，感受文化差異的衝擊。</p>
+          <div class="money">NTD 88,000/人</div>
+          <button class="all-btn">visit now</button>
         </div>
       </div>
     </div>
@@ -170,11 +172,9 @@
         <img src="images/deep/roma01.jpg" alt="">
         <div class="card-content">
           <h1>羅馬16天</h1>
-          <p class="card-text">專門走訪義大利著名的古蹟景點，藉由專業的導覽解說了解原由背景，橫跨南北兩端，深入了解文化脈絡。</p>
-          <p>NTD 78,000/人</p>
-          <a href="#"><button class="all-btn">
-            visit now
-          </button></a>
+          <p>專門走訪義大利著名的古蹟景點，藉由專業的導覽解說了解原由背景，橫跨南北兩端，深入了解文化脈絡。</p>
+          <div class="money">NTD 78,000/人</div>
+          <button class="all-btn">visit now</button>
         </div>
       </div>
     </div>
@@ -184,44 +184,16 @@
         <img src="images/deep/greece.png" alt="">
         <div class="card-content">
           <h1>希臘短期休閒假期</h1>
-          <p class="card-text">1個月體驗希臘在地生活，試著在有限的時間內融入當地，感受文化差異的衝擊。</p>
-          <p>NTD 88,000/人</p>
-          <a href="#"><button class="all-btn">
-            visit now
-          </button></a>
+          <p>1個月體驗希臘在地生活，試著在有限的時間內融入當地，感受文化差異的衝擊。</p>
+          <div class="money">NTD 88,000/人</div>
+          <button class="all-btn">visit now</button>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- page -->
-<div id="pag-cover">
-  <div id="pg-links">
-    <div class="td arr-cover">
-      <div class="arrow" id="l-arrow">
-        <i class="fas fa-chevron-circle-left"></i>
-      </div>
-    </div>
-    <div class="td">
-      <div id="links">
-          <div class="pg-link" id="m-pg-link">
-            <span>1</span>
-          </div>
-          <div class="pg-link">
-            <span>2</span>
-          </div>
-          <div class="pg-link">
-            <span>3</span>
-          </div>
-      </div>
-    </div>
-    <div class="td arr-cover">
-      <div class="arrow" id="r-arrow">
-        <i class="fas fa-chevron-circle-right"></i>
-      </div>
-    </div>
-  </div>
-</div>
+
 <!-- all type end -->
 
 <!-- apply start -->
