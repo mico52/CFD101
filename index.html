@@ -6,60 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travelbag</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.6/swiper-bundle.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.6/swiper-bundle.min.js">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-<link rel="stylesheet" href="fontawesome-free-5.15.3/css/all.min.css">
-<script src="js/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.6/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <link rel="stylesheet" href="fontawesome-free-5.15.3/css/all.min.css">
+ 
 
 </head>
 <body>
 <!-- navbar -->
 <header>
-  <div class="container">
-  
-    <h1 class="logo">
-      <img src="images/logo.svg" alt="">
-    </h1>
-    
-    <nav class="site-nav">
-        <ul>
-          <li><a href="deep.html">深度旅行</a></li> 
-          <li><a href="theme.html">主題旅遊</a></li>
-          <li><a href="accommodation.html">住宿優惠</a></li>
-          <li><a href="discussion.html">討論區</a></li>
-          <li><a href="#">登入 / 註冊</a></li>
-        </ul> 
+  <div class="nav">
+  <div class="header">
+    <div class="logo">
+      <img src="images/logo.svg">
+    </div>
+    <div class="menu">
+      <img class="bars" src="images/menu.svg">
+    </div>
+  </div>
+  </div>
+
+    <nav class="navbar">
+      <ul>
+        <li style="--i:1;"><a href="index.html">首頁</a></li>
+        <li style="--i:2;"><a href="theme.html">主題旅遊</a></li>
+        <li style="--i:3;"><a href="accommodation.html">住宿優惠</a></li>
+        <li style="--i:4;"><a href="discussion.html">討論區</a></li>
+        <li style="--i:5;"><a href="#">登入 / 註冊</a></li>
+      </ul>
     </nav>
 
-    <nav class="site-nav-lg">
-      <ul>
-        <li><a href="deep.html">深度旅行</a></li> 
-        <li><a href="theme.html">主題旅遊</a></li>
-        <li><a href="accommodation.html">住宿優惠</a></li>
-        <li><a href="discussion.html">討論區</a></li>
-        <li><a href="#">登入 / 註冊</a></li>
-      </ul> 
-  </nav>
-    
-    <div class="menu-toggle">
-      <div class="hamburger"></div>
-    </div>
-    
-  </div>
-  </header>
+</header>
   
-
-<script>
-  $('.menu-toggle').click(function() {
-  
-  $('.site-nav').toggleClass('site-nav--open', 500);
-  $(this).toggleClass('open');
-  
-})
-</script>
 
 
 <!-- banner -->
@@ -68,11 +48,9 @@
     <div class="bann-header">
       <div class="inner-header">
         <span class="banner-text">
-          <p>JOIN</p>
-          <p>TRAVEL</p>
     
-          <form action="#">
-            <input type="text" name="" id="" placeholder=" 請輸入目的地、景點......">
+          <form>
+            <input type="text" placeholder=" 請輸入目的地、景點......">
             <a href="#">
               <i class="fas fa-search"></i>
             </a>
@@ -97,27 +75,20 @@
 </div>
 
 
-<!-- mouse -->
-<section class="mouse-block">
-  <div class="mouse"></div>
-  <span class="mouse-text">Scrolling</span>
-</section>
-
-
 <!-- new -->
 <section class="swiper-container2">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <div class="new-title" data-swiper-parallax="-300">
         <h1>Latest&ensp;news<p class="news-ch">最新消息</p></h1>
-
         <div class="new-flex">
-        <img src="images/news001.jpg" alt="">
-        
-        <div class="news-text" data-swiper-parallax="-100">
-          <div class="news-subtitle" data-swiper-parallax="-200"><a href="page01.html">義大利度假14日遊<br>~第二人9折優惠~</a></div>
-          <p><a href="page01.html">暢遊威尼斯，享受美味義式料理，搭乘小船穿梭在城市中體驗在地風情。</a></p>
-        </div>
+          <img src="images/news001.jpg">
+          <div class="news-text" data-swiper-parallax="-100">
+            <div class="news-subtitle" data-swiper-parallax="-200">
+              <a href="page01.html">義大利度假14日遊<br>~第二人9折優惠~</a>
+            </div>
+            <p>暢遊威尼斯，享受美味義式料理，搭乘小船穿梭在城市中體驗在地風情。</p>
+          </div>
         </div>
       </div>
     </div>
@@ -125,15 +96,14 @@
     <div class="swiper-slide">
       <div class="new-title" data-swiper-parallax="-300">
         <h1>Latest&ensp;News<p class="news-ch">最新消息</p></h1>
-
         <div class="new-flex">
-        <img src="images/news002.jpg" alt="">
-
-        <div class="news-text" data-swiper-parallax="-100">
-        <div class="news-subtitle" data-swiper-parallax="-200">土耳其12日歡樂遊<br>~第二人85折~</div>
-
-          <p>體驗卡帕多其亞熱氣球，欣賞伊斯蘭教建築典範，不論是自然景觀、美食、歷史、多民族生活面貌，都吸引世界各地的遊客蜂擁而至!</p>
-        </div>
+          <img src="images/news002.jpg" alt="">
+          <div class="news-text" data-swiper-parallax="-100">
+            <div class="news-subtitle" data-swiper-parallax="-200">
+              <a href="#">土耳其12日歡樂遊<br>~第二人85折~</a>
+            </div>
+            <p>體驗卡帕多其亞熱氣球，欣賞伊斯蘭教建築典範，不論是自然景觀、美食、歷史、多民族生活面貌，都吸引世界各地的遊客蜂擁而至!</p>
+          </div>
         </div>
       </div>
     </div>
@@ -141,41 +111,24 @@
     <div class="swiper-slide">
       <div class="new-title" data-swiper-parallax="-300">
         <h1>Latest&ensp;News<p class="news-ch">最新消息</p></h1>
-
         <div class="new-flex">
-        <img src="images/news003.jpg" alt="">
-
-        <div class="news-text" data-swiper-parallax="-100">
-        <div class="news-subtitle" data-swiper-parallax="-200">泰國文化7日行<br>~第三人優待5000元~</div>
-        
-          <p>體驗泰國古老文化，探訪古蹟建築群，大吃泰式美食，一窺泰國文化風情。</p>
-        </div>
+          <img src="images/news003.jpg" alt="">
+          <div class="news-text" data-swiper-parallax="-100">
+            <div class="news-subtitle" data-swiper-parallax="-200">
+              <a href="#">泰國文化7日行<br>~第三人優待5000元~</a>
+            </div>
+            <p>體驗泰國古老文化，探訪古蹟建築群，大吃泰式美食，一窺泰國文化風情。</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
   
   <div class="swiper-pagination"></div>
-  
-  <div id="banner-btn" class="swiper-button-prev swiper-button-white"></div>
-  <div id="banner-btn" class="swiper-button-next swiper-button-white"></div>
+  <div id="banner-btn" class="swiper-button-prev swiper-button-white">&larr;</div>
+  <div id="banner-btn" class="swiper-button-next swiper-button-white">&rarr;</div>
 </section>
 
-<script>
-  var swiper = new Swiper('.swiper-container2', {
-      loop:true,
-      speed: 600,
-      parallax: true,
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-</script>
 
 
 <!-- tour type -->
@@ -198,7 +151,7 @@
           <span><a href="#">76,600/人</a></span>
         </div>
         <div class="box-content type-more">
-          <a href="#">+ More</a>
+          <a href="#">More</a>
         </div>
     </section>
     <input type="radio" name="accordion" id="cb2">
@@ -216,7 +169,7 @@
         <span><a href="#">72,800/人</a></span>
       </div>
       <div class="box-content type-more">
-        <a href="#">+ More</a>
+        <a href="#">More</a>
       </div>
     </section>
     <input type="radio" name="accordion" id="cb4">
@@ -234,16 +187,13 @@
         <span><a href="#">4,200起</a></span>
       </div>
       <div class="box-content type-more">
-        <a href="#">+ More</a>
+        <a href="#">More</a>
       </div>
     </section>
     <input type="radio" name="accordion" id="acc-close">
   </nav>
 </section>
 
-<script>
-  TweenMax.to(".box-content span:nth-child(1)", 1,{duration:2.5,ease: "sine.out", y:-5,repeat : -1 });
-</script>
 
 <!-- tour type-m -->
 <div class="tourtype-m">
@@ -300,104 +250,8 @@
   </div>
 </div>
 </div>
- 
-
 
 </div>
-
-<script>
-  TweenMax.to("#first span,#second span,#third span", 1,{duration:2.5,ease: "sine.out", y:-5,repeat : -1 });
-</script>
-
-<script>
-  $(".choose").click(function() {
-  $(".choose").addClass("active");
-  $(".choose > .icon").addClass("active");
-  $(".pay").removeClass("active");
-  $(".wrap").removeClass("active");
-  $(".ship").removeClass("active");
-  $(".pay > .icon").removeClass("active");
-  $(".wrap > .icon").removeClass("active");
-  $(".ship > .icon").removeClass("active");
-  $("#line").addClass("one");
-  $("#line").removeClass("two");
-  $("#line").removeClass("three");
-  $("#line").removeClass("four");
-})
-
-$(".pay").click(function() {
-  $(".pay").addClass("active");
-  $(".pay > .icon").addClass("active");
-  $(".choose").removeClass("active");
-  $(".wrap").removeClass("active");
-  $(".ship").removeClass("active");
-  $(".choose > .icon").removeClass("active");
-  $(".wrap > .icon").removeClass("active");
-  $(".ship > .icon").removeClass("active");
-  $("#line").addClass("two");
-  $("#line").removeClass("one");
-  $("#line").removeClass("three");
-  $("#line").removeClass("four");
-})
-
-$(".wrap").click(function() {
-  $(".wrap").addClass("active");
-  $(".wrap > .icon").addClass("active");
-  $(".pay").removeClass("active");
-  $(".choose").removeClass("active");
-  $(".ship").removeClass("active");
-  $(".pay > .icon").removeClass("active");
-  $(".choose > .icon").removeClass("active");
-  $(".ship > .icon").removeClass("active");
-  $("#line").addClass("three");
-  $("#line").removeClass("two");
-  $("#line").removeClass("one");
-  $("#line").removeClass("four");
-})
-
-$(".ship").click(function() {
-  $(".ship").addClass("active");
-  $(".ship > .icon").addClass("active");
-  $(".pay").removeClass("active");
-  $(".wrap").removeClass("active");
-  $(".choose").removeClass("active");
-  $(".pay > .icon").removeClass("active");
-  $(".wrap > .icon").removeClass("active");
-  $(".choose > .icon").removeClass("active");
-  $("#line").addClass("four");
-  $("#line").removeClass("two");
-  $("#line").removeClass("three");
-  $("#line").removeClass("one");
-})
-
-$(".choose").click(function() {
-  $("#first").addClass("active");
-  $("#second").removeClass("active");
-  $("#third").removeClass("active");
-  $("#fourth").removeClass("active");
-})
-
-$(".pay").click(function() {
-  $("#first").removeClass("active");
-  $("#second").addClass("active");
-  $("#third").removeClass("active");
-  $("#fourth").removeClass("active");
-})
-
-$(".wrap").click(function() {
-  $("#first").removeClass("active");
-  $("#second").removeClass("active");
-  $("#third").addClass("active");
-  $("#fourth").removeClass("active");
-})
-
-$(".ship").click(function() {
-  $("#first").removeClass("active");
-  $("#second").removeClass("active");
-  $("#third").removeClass("active");
-  $("#fourth").addClass("active");
-})
-</script>
 
 
 
@@ -448,20 +302,6 @@ $(".ship").click(function() {
 
 </section>
 
-
-<script>
-  var swiper = new Swiper('.swiper-container', {
-    // navigation: {
-    //   nextEl: '.swiper-button-next4',
-    //   prevEl: '.swiper-button-prev4',
-    // },
-    loop:true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-  });
-</script>
       
 
 <!-- recommand -->
@@ -524,13 +364,17 @@ $(".ship").click(function() {
               <div class="front roma">
                 <div class="inner">
                   <p>Roma&ensp;羅馬</p>
-                  <span><a href="#">✈ 進入</a></span>
+                  <span><a href="#">
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a></span>
                 </div>
               </div>
               <div class="back">
                 <div class="inner">
                   <p>羅馬  ▎ 世界著名的歷史文化名城，古羅馬文明的發祥地被暱稱為「永恆之城」。</p>
-                  <a href="#">✈ 進入</a>
+                  <a href="#">
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -540,13 +384,17 @@ $(".ship").click(function() {
               <div class="front newyork">
                 <div class="inner">
                   <p>New York&ensp;紐約</p>
-                  <span><a href="#">✈ 進入</a></span>
+                  <span><a href="#">
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a></span>
                 </div>
               </div>
               <div class="back">
                 <div class="inner">
                   <p>紐約  ▎ 為全球經濟、商業、金融、媒體、政治、教育和娛樂具有極大影響力的國際大都會。</p>
-                  <a href="#">✈ 進入</a>
+                  <a href="#">
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -556,13 +404,17 @@ $(".ship").click(function() {
               <div class="front osaka">
                 <div class="inner">
                   <p>Osaka&ensp;大阪</p>
-                  <span><a href="#">✈ 進入</a></span>
+                  <span><a href="#">
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a></span>
                 </div>
               </div>
               <div class="back">
                 <div class="inner">
                   <p>大阪  ▎ 西日本最大都市和經濟中心，也以其獨特的庶民文化而著稱。</p>
-                  <a href="#">✈ 進入</a>
+                  <a href="#">
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -572,13 +424,17 @@ $(".ship").click(function() {
               <div class="front taipei">
                 <div class="inner">
                   <p>Taipei&ensp;台北</p>
-                  <span><a href="#">✈ 進入</a></span>
+                  <span><a href="#">
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a></span>
                 </div>
               </div>
               <div class="back">
                 <div class="inner">
                   <p>台北  ▎ 現代感的城市融合日本殖民時期遺留的街巷及當代風格的建築。</p>
-                  <a href="#">✈ 進入</a>
+                  <a href="#">
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -588,13 +444,17 @@ $(".ship").click(function() {
               <div class="front kyoto">
                 <div class="inner">
                   <p>Kyoto&ensp;京都</p>
-                  <span><a href="#">✈ 進入</a></span>
+                  <span><a href="#">
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a></span>
                 </div>
               </div>
               <div class="back">
                 <div class="inner">
                   <p>京都  ▎ 與東京並列為現今日本最具代表性的文化櫥窗。</p>
-                  <a href="#">✈ 進入</a>
+                  <a href="#">
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -604,13 +464,17 @@ $(".ship").click(function() {
               <div class="front florence">
                 <div class="inner">
                   <p>Florence&ensp;佛羅倫斯</p>
-                  <span><a href="#">✈ 進入</a></span>
+                  <span><a href="#">
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a></span>
                 </div>
               </div>
               <div class="back">
                 <div class="inner">
                   <p>佛羅倫斯  ▎ 被認為是文藝復興運動的誕生地，藝術與建築的搖籃之一。</p>
-                  <a href="#">✈ 進入</a>
+                  <a href="#">
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -747,5 +611,8 @@ $(".ship").click(function() {
       </div>
     </div>
   </section>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
