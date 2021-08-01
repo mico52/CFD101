@@ -42,24 +42,19 @@ a{
 }
 
 /* header */
-header .menu{
-  position: fixed;
-  top: .6em;
-  right: .8em;
-  font-size: 4em;
+.menu{
   color: var(--orange);
   cursor: pointer;
-  z-index: 999;
   overflow: hidden;
+  width: 2rem;
+  padding-top: .2rem;
 }
 
-.drop-shadow {
-  -webkit-filter: drop-shadow(4px 4px 2px rgba(255, 255, 255, 0.3));
-  filter: drop-shadow(4px 4px 2px rgba(255, 255, 255, 0.3));
+.menu img{
+  width: 100%;
 }
 
-
-header .navbar{
+.navbar{
   height: 100vh;
   width: 30rem;
   position: fixed;
@@ -67,18 +62,20 @@ header .navbar{
   right: 0;
   background: #111;
   display: none;
+  z-index: 888;
 }
 
-header .navbar ul{
+.navbar ul{
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-top: 5rem;
+  padding-left: 6rem;
   flex-flow: column;
   height: 100%;
   list-style: none;
 }
 
-header .navbar ul li{
+.navbar ul li{
   margin-top: 3em;
   animation: fadeIn .2s linear backwards;
   animation-delay: calc(.3s*var(--i));
@@ -91,18 +88,82 @@ header .navbar ul li{
   }
 }
 
-header .navbar ul li a{
-  font-size: 2.2em;
+.navbar ul li a{
+  font-size: 1.3rem;
   color: #fff;
   text-decoration: none;
 }
 
-header .navbar ul li a:hover{
+.navbar ul li a:hover{
   color: var(--orange);
 }
 
-.fa-times{
-  transform: rotate(180deg) skew(-180deg);
+header{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem 1.2rem 0 1.2rem;
+  box-sizing: border-box;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 7rem;
+}
+
+.logo img{
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .logo{
+    width: 10rem;
+  }
+  .navbar ul{
+    padding-right: 6rem;
+  }
+  .navbar ul li a{
+    font-size: 1.6rem;
+  }
+  .menu{
+    width: 2.6rem;
+  }
+  .nav{
+    padding: 2rem 1.6rem 0 1.6rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+ .logo{
+    width: 14rem;
+  }
+  .menu{
+    width: 3.2rem;
+    padding-top: 1rem;
+  }
+  .nav{
+    padding: 2rem 2rem 0 2rem;
+  }
+  .navbar ul li a{
+    font-size: 1.8rem;
+  }
+  .navbar ul li{
+    margin-top: 4.2rem;
+  }
+  .navbar ul{
+    padding-top: 8rem;
+  }
 }
 
 
@@ -600,7 +661,7 @@ header .navbar ul li a:hover{
 
 /* tour14 */
 .t14-recipes{
-  background-image: url(../images/page/plane.jpg);
+  background-image: url(../images/page/plane01.png);
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -672,6 +733,7 @@ figure.snip {
   box-shadow: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  max-width: 1200px;
 }
 
 figure.snip img {
@@ -775,6 +837,7 @@ figure.snip .author h5 span {
   margin: 0 auto;
   width: 80%;
   color: #333;
+  max-width: 1200px;
 }
 
 .single-cta {
@@ -929,15 +992,14 @@ figure.snip .author h5 span {
 .subscribe-form button {
     position: absolute;
     right:0;
-    background: #EBB529;
+    background: none;
     padding: 14px 20px;
-    /* border: 1px solid #EBB529; */
     border: 0;
     bottom: 0;
 }
 
 .subscribe-form button i {
-  color: #fff;
+  color: #EBB529;
   font-size: 1.2em;
   transform: rotate(-6deg);
 }
@@ -1005,8 +1067,8 @@ figure.snip .author h5 span {
 .copyright-text p {
   bottom: 0;
   font-size: .8em;
-  color: #ffffff;
+  color: #5c5c5c;
   text-align: center;
-  background-color: #383838;
+  background-color: #d6d6d6;
   padding: .3em 0;
 }
