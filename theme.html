@@ -13,25 +13,29 @@
 </head>
 <body>
   <!-- header section start -->
-<header>
-  <nav class="navbar">
-    <ul>
-      <li style="--i:1;"><a href="index.html">首頁</a></li>
-      <li style="--i:2;"><a href="deep.html">深度旅行</a></li>
-      <li style="--i:3;"><a href="accommodation.html">住宿優惠</a></li>
-      <li style="--i:4;"><a href="discussion.html">討論區</a></li>
-      <li style="--i:5;"><a href="#">登入 / 註冊</a></li>
-    </ul>
-  </nav>
-
-
-  <div class="logo drop-shadow">
-    <img src="images/logo.svg" alt="">
-    <div class="menu drop-shadow">
-      <i class="fas fa-bars "></i>
+  <header>
+    <div class="nav">
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.svg">
+      </div>
+      <div class="menu">
+        <img class="bars" src="images/menu.svg">
+      </div>
     </div>
-  </div>
-</header>
+    </div>
+  
+      <nav class="navbar">
+        <ul>
+          <li style="--i:1;"><a href="index.html">首頁</a></li>
+          <li style="--i:2;"><a href="deep.html">深度旅行</a></li>
+          <li style="--i:3;"><a href="accommodation.html">住宿優惠</a></li>
+          <li style="--i:4;"><a href="discussion.html">討論區</a></li>
+          <li style="--i:5;"><a href="#">登入 / 註冊</a></li>
+        </ul>
+      </nav>
+  
+  </header>
 <!-- header section end -->
 
 <!-- banner section start -->
@@ -41,7 +45,7 @@
   </div>
 
   <div class="banner">
-    <div class="container">
+    <div>
       <h1 class="banner-title">
         <span>主題</span>旅遊
       </h1>
@@ -53,36 +57,28 @@
         
           <input type="date">
         
-        <!-- <div class="form-item">
-          <select name="place" id="" class="form-control">
-            <option value="where">wherer</option>
-            <option value="where">wherer</option>
-            <option value="where">wherer</option>
-            <option value="where">wherer</option>
-            <option value="where">wherer</option>
-          </select>
-        </div> -->
-        <!-- <div class="form-item"></div> -->
-          <input type="submit" class="submit-btn" value="search"> 
+          <button class="submit-btn">
+            <i class="fas fa-search"></i>
+          </button>
       </form>
 
       <p class="banner-text">Or browse the hights</p>
 
       <div class="banner-btn">
         <button type="button" class="banner-btn">
-          <span>台灣</span>
+          <span>台&emsp;灣</span>
         </button>
 
         <button type="button" class="banner-btn">
-          <span>歐洲</span>
+          <span>歐&emsp;洲</span>
         </button>
 
         <button type="button" class="banner-btn">
-          <span>亞洲</span>
+          <span>亞&emsp;洲</span>
         </button>
 
         <button type="button" class="banner-btn">
-          <span>非洲</span>
+          <span>非&emsp;洲</span>
         </button>
 
         <button type="button" class="banner-btn">
@@ -117,7 +113,11 @@
       <figcaption>
         <h3>威尼斯度假14日遊</h3>
         <p>享受美味義式料理，搭乘小船穿梭在城市中。</p>
-        <p>62,800/人<button class="re-btn"><a href="#">Enter</a></button></p>
+        <p class="Rmoney">62,800/人
+          <button class="re-btn">
+            <i class="fas fa-sign-in-alt"></i>
+          </button>
+        </p>
         
       </figcaption>
     </figure>
@@ -128,7 +128,11 @@
       <figcaption>
         <h3>土耳其12日歡樂遊</h3>
         <p>體驗卡帕多其亞熱氣球，欣賞伊斯蘭教建築。</p>
-        <p>52,200/人<button class="re-btn"><a href="#">Enter</a></button></p>
+        <p class="Rmoney">52,200/人
+          <button class="re-btn">
+            <i class="fas fa-sign-in-alt"></i>
+          </button>
+        </p>
       </figcaption>
     </figure>
 
@@ -138,7 +142,11 @@
       <figcaption>
         <h3>泰國文化7日行</h3>
         <p>體驗泰國古老文化，大吃泰式美食，瀏覽當地古蹟。</p>
-        <p>38,000/人<button class="re-btn"><a href="#">Enter</a></button></p>
+        <p class="Rmoney">38,000/人
+          <button class="re-btn">
+            <i class="fas fa-sign-in-alt"></i>
+          </button>
+        </p>
       </figcaption>
     </figure>
 
@@ -153,49 +161,25 @@
       <span>Latest</span>&ensp;news
     </h2>
 
-  <div class="">
+  <div>
     <div class="slider owl-carousel">
 
       <div class="card">
         <div class="img">
           <img src="images/theme/new01.png">
         </div>
-      <!-- <div class="content">
-        <h2 class="title">cdsCDCD</h2>
-        <p class="sub-title">vdvfzdfv</p>
-        <p>jcosicosjcoc</p>
-        <div class="slider-btn">
-          <button>read more</button>
-        </div>
-      </div> -->
       </div>
 
       <div class="card">
         <div class="img">
           <img src="images/theme/new02.png">
         </div>
-      <!-- <div class="content">
-        <h2 class="title">cdsCDCD</h2>
-        <p class="sub-title">vdvfzdfv</p>
-        <p>jcosicosjcoc</p>
-        <div class="slider-btn">
-          <button>read more</button>
-        </div>
-      </div> -->
       </div>
 
       <div class="card">
         <div class="img">
           <img src="images/theme/new01.png">
         </div>
-      <!-- <div class="content">
-        <h2 class="title">cdsCDCD</h2>
-        <p class="sub-title">vdvfzdfv</p>
-        <p>jcosicosjcoc</p>
-        <div class="slider-btn">
-          <button>read more</button>
-        </div>
-      </div> -->
       </div>
 
     </div>
@@ -393,33 +377,7 @@
   </div>
 
   <!-- page -->
-  <div id="pag-cover">
-    <div id="pg-links">
-      <div class="td arr-cover">
-        <div class="arrow" id="l-arrow">
-          <i class="fas fa-chevron-circle-left"></i>
-        </div>
-      </div>
-      <div class="td">
-        <div id="links">
-            <div class="pg-link" id="m-pg-link">
-              <span>1</span>
-            </div>
-            <div class="pg-link">
-              <span>2</span>
-            </div>
-            <div class="pg-link">
-              <span>3</span>
-            </div>
-        </div>
-      </div>
-      <div class="td arr-cover">
-        <div class="arrow" id="r-arrow">
-          <i class="fas fa-chevron-circle-right"></i>
-        </div>
-      </div>
-    </div>
-  </div>
+
 </section>
 <!-- tour section end -->
 

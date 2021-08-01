@@ -272,7 +272,7 @@ header{
 
 @media screen and (max-width:640px){
   .first .content{
-    font-size: 70%;
+    font-size: 68%;
   }
   .first .content .form-container form{
     margin-top: 3rem;
@@ -282,10 +282,13 @@ header{
     font-size: 1rem;
   }
   .first .content .form-container form input{
-    height: 2.4rem;
+    height: 2.2rem;
   }
   .first .content .form-container form select{
     height: 2.4rem;
+  }
+  .first .content h3{
+    font-size: .8rem;
   }
 }
 
@@ -699,7 +702,7 @@ header{
 .subscribe-form button {
   position: absolute;
   right:0;
-  background: #EBB529;
+  background: none;
   height: -webkit-fill-available;
   width: 3rem;
   border: 0;
@@ -707,7 +710,7 @@ header{
 }
 
 .subscribe-form button i {
-  color: #fff;
+  color: #EBB529;
   font-size: 1.2em;
   transform: rotate(-6deg);
 }
