@@ -14,18 +14,26 @@
 <body>
   <!-- header section start -->
 <header>
-  <nav class="navbar">
-    <ul>
-      <li style="--i:1;"><a href="index.html">首頁</a></li>
-      <li style="--i:2;"><a href="deep.html">深度旅行</a></li>
-      <li style="--i:3;"><a href="theme.html">主題旅遊</a></li>
-      <li style="--i:4;"><a href="discussion.html">討論區</a></li>
-      <li style="--i:5;"><a href="#">登入 / 註冊</a></li>
-    </ul>
-  </nav>
-
+  <div class="nav">
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.svg">
+      </div>
+      <div class="menu">
+        <img class="bars" src="images/menu.svg">
+      </div>
+    </div>
+    </div>
   
-  <div class="menu drop-shadow"><i class="fas fa-bars "></i></div>
+      <nav class="navbar">
+        <ul>
+          <li style="--i:1;"><a href="index.html">首頁</a></li>
+          <li style="--i:2;"><a href="theme.html">主題旅遊</a></li>
+          <li style="--i:3;"><a href="deep.html">深度旅行</a></li>
+          <li style="--i:4;"><a href="discussion.html">討論區</a></li>
+          <li style="--i:5;"><a href="#">登入 / 註冊</a></li>
+        </ul>
+      </nav>
 
 </header>
 <!-- header section end -->
@@ -37,7 +45,7 @@
     <div class="site-bgtext">
       <h1>DISCOVER</h1>
       <h3>住宿優惠</h3>
-      <button class="site-btn">Explore</button>
+      <!-- <button class="site-btn">Explore</button> -->
     </div>
   </div>
 </section>
@@ -88,8 +96,8 @@
         </select>
       </div>
 
-      <button type="submit" class="btn form-btn">search
-        <!-- <span class="dots"></span> -->
+      <button type="submit" class="btn form-btn">
+        <i class="fas fa-search"></i>
       </button>
     </form>
   </div>
@@ -101,8 +109,8 @@
   <div class="news">
     <div class="news-container">
 
-      <!-- <h3 class="main-title-s">最新活動</h3>
-      <h2 class="main-title">Latest news</h2> -->
+      <h3 class="main-title-s">最新消息</h3>
+      <h2 class="main-title">Latest news</h2>
 
       <div class="owl-carousel owl-theme news-post">
 
